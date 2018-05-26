@@ -17,6 +17,10 @@
 /*---Fixing issues with anchors and navbar--*/
 .anchor { padding-top: 65px; }
 
+@media (max-width: 768px) {
+  .anchor { padding-top: 220px; }
+}
+
 /*--- Making the text responsive for mobile viewing ---*/
 
 html {
