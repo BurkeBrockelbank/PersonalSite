@@ -1,0 +1,167 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{oldstyle}                           % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Burke}{Brockelbank}
+\title{Cirriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{7-209 6445 University Blvd.}{V6T 1Z2 Vancouver, British Columbia}{Canada}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(587) 434 8839}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{(403) 220 6737}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{burke.brockelbank@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{Hanoi}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{www.burkelibrockelbank.herokuapp.com}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2013--2017}{BSc Physics with Honors, First Class}{University of Calgary}{Calgary, Alberta}{GPA: 3.9}{Graduated April 2017.\newline{}%
+\cvitem{Thesis}{\emph{Maximally entangled multipartite symmetric states}}{Supervised by Gilad Gour. Characterization of maximal entanglement in pure multipartite qubit states with symmetry under exchange of qubits.}% arguments 3 to 6 can be left empty
+\newline{}
+%\cvitem{Term paper}{\emph{Gibbs volume entropy}}{Literature review concerning the Gibbs ``volume" entropy as defined in the microcanonical ensemble and its relation to negative temperature.}\newline{}
+%\cvitem{Term paper}{\emph{Image processing}}{Literature review concerning the use of Fourier analysis in image processing for symbol recognition and selected other topics.}\newline{}
+\cvitem{Classes}{\emph{Special classes taken during BSc}}
+\begin{itemize}
+    \item
+        Solid state physics
+    \item
+        Introduction to Optimization
+    \item
+        Introduction to Nanoscience and Nanotechnology
+\end{itemize}}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Work Experience}
+%\subsection{Physics}
+\cventry{2017-2018}{Research Assistant}{Nasser Moazzen-Ahmadi}{Calgary}{University of Calgary}{Investigating the feasibility of infrared photon-induced upgrading of bitumen\newline{}%
+\begin{itemize}%
+\item Executing and analyzing gas chromatography and mass spectrometry
+\end{itemize}}
+%\subsection{Physics}
+\cventry{2015--2017}{Summer Researcher}{Nasser Moazzen-Ahmadi}{Calgary}{University of Calgary}{Study of rovibrational spectroscopy of molecular clusters. Included lab and computational work.\newline{}%
+\begin{itemize}%
+\item High and low vacuum systems
+\item Lasers and optics
+\item Poster presentation at Quantum Alberta Workshop 2016
+\end{itemize}}
+%\subsection{Miscellaneous}
+\cventry{2014}{Freight Associate}{The Home Depot}{Calgary, Alberta}{}{Overnight stocking}
+
+%\section{Training}
+%\cventry{}{Standard First Aid and CPR C}{}{Calgary}{Canadian Red Cross}{My certification expires August 27, 2020.}
+%\cventry{}{WHMIS}{}{Calgary}{University of Calgary}{I have taken occupational courses in both WHMIS 2015 and 1988.}
+%\cventry{}{Occupational Hazards}{}{Calgary}{University of Calgary}{I received training in the assessment and mitigation of workplace hazards while working directly under the primary investigator in my research lab, and have conducted the yearly safety inspection.}
+
+%\section{Languages}
+%\cvitemwithcomment{Python}{Proficient}{}
+%\cvitemwithcomment{Fortran 77, 90}{Familiar}{}
+%\cvitemwithcomment{LabView}{Some experience}{}
+
+\section{Computer skills}
+\cvitem{Programming}{In order of familiarity: Python (Scipy, Numpy, Pytorch), LabVIEW, Fortran 77 and 90, Matlab, SQL, Shell and Batch scripts, Makefiles}
+\cvitem{Word Processing}{Proficient with LaTeX as well as WYSWIG editors such as MS Word}
+\cvitem{Spreadsheets}{Translatable experience with data analysis}
+\cvitem{OS}{Experience on Windows and Linux, as well as Mac OS.}
+
+\section{Awards and Scholarships}
+\cvitem{NSERC Undergraduate Student Research Award}{2016}
+\cvitem{Louise McKinney Scholarship}{2015}
+\cvitem{University of Calgary Undergraduate Merit Award}{2015}
+\cvitem{Physics and Astronomy Book Award}{2015}
+\cvitem{Physics and Astronomy Undergraduate Scholarship}{2015}
+\cvitem{Jason Lang Scholarship}{2014}
+\cvitem{President's Admission Scholarship}{2013}
+\cvitem{Alexander Rutherford Scholarship}{2013}
+
+\section{Publications}
+\cvitem{unpublished}{Use of quantum-correlated twin beams for cancellation of power fluctuations in a continuous-wave optical parametric oscillator for high-resolution spectroscopy in the rapid scan mode}
+\cvitem{unpublished}{Absolutely Maximally Entangled Multipartite Symmetric States}
+\cvitem{2017}{Three new infrared bands of the He-OCS complex}
+
+
+
+\end{document}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+\clearpage
+\recipient{University of Calgary}{2500 University Dr NW, Calgary, AB T2N 1N4}
+\date{\today}
+\opening{Dear Sir or Madam,}
+\closing{Yours faithfully,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+I am glad to apply for this position as a research technician at D-Wave. I first heard about D-Wave in a talk by a guest speaker, Dr. Alexandre Blais, at the University of Calgary. Later, in conversation with an old professor of mine, Dr. Paul Barclay, he suggested I should look for work with D-Wave. You can imagine my excitement at seeing an open position.
+
+In my current position as a research assistant, I design and interpret experiments on upgrading bitumen, but concurrently work in a support role in molecular spectroscopy. I regularly work with cryogenic temperatures as well as testing and repairing simple electronic components. I also work on software that automates some lab processes. This experience makes me very well suited to this position. I understand that there will be much to learn, but I am very interested in understanding the project both on a large scale and in detail.
+
+%I am glad to apply for this position as Data Analyst. I have recently graduated from a BSc in physics and I am very interested into applying the practices I learned in a non-academic setting.
+
+%I understand that this position requires a top student with great mathematical skills. Programming skills are definitely an asset in a data analyst position. I can assure you that I graduated in the top of my class with a GPA of 3.9. I also excelled in all of my math courses and have skills in calculus, linear algebra, and analysis, as well as more applied areas of math such as convex optimization. Finally, I have always had a passion for developing code. My programming language of choice is Python, but I am familiar with several. I like Python because it is useful for quickly writing scripts that increase workflow efficiency.
+
+I look forward to hearing more about the details of this project and where I would fit in!
+
+\makeletterclosing
+
+
+
+
+%% end of file `template.tex'.
