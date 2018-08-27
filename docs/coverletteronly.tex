@@ -1,0 +1,105 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{oldstyle}                           % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{5cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Burke}{Brockelbank}
+\title{Cirriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{7-209 6445 University Blvd.}{V6T 1Z2 Vancouver, British Columbia}{Canada}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(587) 434 8839}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{(403) 220 6737}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{bbrockel@ucalgary.ca}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{Hanoi}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{The usefulness of a pot comes from its emptiness.\\-Laozi}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+
+
+
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+%\section{Languages}
+%\cvitemwithcomment{Python}{Proficient}{}
+%\cvitemwithcomment{Fortran 77, 90}{Familiar}{}
+%\cvitemwithcomment{LabView}{Some experience}{}
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+\clearpage
+\recipient{Tri Alpha Energy}{}
+\date{\today}
+\opening{To Whom it May Concern,}
+\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+  I am writing this in reference to your job posting of Jr. Diagnostic Specialist. I have a background in physics working in infrared molecular spectroscopy and bitumen upgrading, but I have had long-time aspirations of contributing to the future of fusion energy.
+
+In my work as a summer student  I developed portions of code for a diagnostic system used for infrared molecular spectroscopy as well as contributed to the design and mainenance (such as alignment and calibration) of several optical experimental apparatuses. In this time I developed a familiarity with lasers, optics, electronics, spectroscopy, and high vacuum, as well as gained programming skill in MATLAB, and python. Also worth mentioning is that in school I built a Michelson interferometer.
+
+I would like to speak briefly about the soft-skills I learned in my previous job. The goal of this project was to develop and characterize a novel method of upgrading bitumen. Since I was the only person devoted full-time to this project, I had a large deal of creative input and responsibility and worked with a high degree of autonomy. Notably, I documented the entire experiment and presented results frequently. My experience in this pivotal role translates to good initiative and a high ability to work independently in future positions.
+
+To summarize, my combination of experiences and the skills I learned in them are a very good match for this position. My CV is attached in this application and on my CV you can find a link to my personal website. I hope you will consider both and contact me regarding this job posting.
+
+\makeletterclosing
+
+
+\end{document}
+
+%% end of file `template.tex'.
