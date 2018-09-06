@@ -6,10 +6,10 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{oldstyle}                           % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{casual}                           % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{grey}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
@@ -20,21 +20,21 @@
 
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
-\setlength{\hintscolumnwidth}{5cm}                % if you want to change the width of the column with the dates
+%\setlength{\hintscolumnwidth}{5cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Burke}{Brockelbank}
-\title{Résumé}                               % optional, remove / comment the line if not wanted
-\address{7-209 Cedar House\\ Poderosa Commons\\2075 West Mall}{Vancouver, B.C. V6T 1Z2}{Canada}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+%\title{Résumé}                               % optional, remove / comment the line if not wanted
+\address{}{Vancouver, B.C., Canada}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{(587) 434 8839}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{(403) 220 6737}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{burke.brockelbank@gmail.com} % optional, remove / comment the line if not wanted
-%\homepage{}                         % optional, remove / comment the line if not wanted
+\homepage{http://burkelibrockelbank.herokuapp.com/}                         % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{Hanoi}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-\quote{http://burkelibrockelbank.herokuapp.com/}                                 % optional, remove / comment the line if not wanted
+%\quote{}                                 % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
@@ -52,21 +52,18 @@
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-
+\vspace{-1cm}
 \section{Education}
-\cventry{2013--2017}{BSc Physics with Honors, First Class}{University of Calgary}{Calgary, Alberta}{GPA: 3.9}{Graduated April 2017.\newline{}%
-\cvitem{Thesis}{\emph{Maximally entangled multipartite symmetric states}}{Supervised by Gilad Gour. Characterization of maximal entanglement in pure multipartite qubit states with symmetry under exchange of qubits.}% arguments 3 to 6 can be left empty
-\newline{}
+\cventry{2013--2017}{Bachelor of Science with First Class Honors  in Physics}{University of Calgary}{Calgary, Alberta}{GPA -- 3.9}{
 %\cvitem{Term paper}{\emph{Gibbs volume entropy}}{Literature review concerning the Gibbs ``volume" entropy as defined in the microcanonical ensemble and its relation to negative temperature.}\newline{}
 %\cvitem{Term paper}{\emph{Image processing}}{Literature review concerning the use of Fourier analysis in image processing for symbol recognition and selected other topics.}\newline{}
-\cvitem{Classes}{\emph{Special classes taken during BSc}}
 \begin{itemize}
     \item
-        Solid state physics
+        \textbf{Solid state physics} -- Crystal structure. Classification of solids and their bonding. Fermi surface. Elastic, electric and magnetic properties of solids.
     \item
-        Introduction to Optimization
+        \textbf{Introduction to Optimization} -- Examples of optimization problems. Quadratic forms, minimum energy and distance. Least squares, generalized inverse. Location and classification of critical points. Variational treatment of eigenvalues. Lagrange multipliers. Linear programming.
     \item
-        Introduction to Nanoscience and Nanotechnology
+        \textbf{Introduction to Nanoscience and Nanotechnology} -- Functional definitions of nanoscience and nanotechnology. Understanding/predicting the behaviour of nanomaterials. Investigation of nanomaterials whose properties depend on size. Exploration of a building up approach to design and fabrication of functional nanomaterials. Examination of applications of nanoscience and nanotechnology in society.
 \end{itemize}}
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
@@ -75,34 +72,61 @@
 %\cvitem{supervisors}{Supervisors}
 %\cvitem{description}{Short thesis abstract}
 
-\section{Work Experience}
+\section{Research Experience}
 %\subsection{Physics}
 \cventry{2017-2018}{Research Assistant}{Nasser Moazzen-Ahmadi}{Calgary}{University of Calgary}{\textbf{Investigating the feasibility of upgrading of bitumen with lasers.}\\%
-In this contract I was the primary researcher in charge of designing, buidling, and implementing the experimental apparatus, as well as determining the best methods for experimentation. This also included detailed log keeping and regular progress reports and presentations.}
+One of the products from Alberta's oil sands is bitumen, a extremely viscous hydrocarbon source with heavy, branching organic compounds. In this state it is not usable for fuel, and is difficult to transport. There are many methods of upgrading bitumen into crude oil, a lighter hydrocarbon that is more easily transported and later refined into petroleum products like gasoline. In this project, I lead the development of a novel technique for upgrading bitumen using lasers.
+\begin{itemize}
+  \item
+    \textbf{Apparatus design} of three separate vacuum cell irradiation chambers and a rotating mount to improve upgrading efficiency by an order of magnitude.
+  \item
+    \textbf{Experimental planning} for chemical characterization with NMR and GCMS to definitively show upgrading.
+  \item
+    \textbf{Organization} of progress and planning into multimedia log, reports, and presentations to communicate with collaborators and funders.
+\end{itemize}}
 %\subsection{Physics}
+\cventry{2016-2017}{Thesis}{Gilad Gour}{Calgary}{University of Calgary}{\textbf{Maximally entangled multipartite symmetric states}\\
+Symmetric states, where exchanging particles leads to no change in the total state are prevalent in nature e.g. identical bosons. In this project I investigated maximal entanglement in these systems.
+\begin{itemize}
+  \item
+    \textbf{Conducted literature review} to learn about the history and current state of the field.
+  \item
+    \textbf{Goal planning} kept the project concise and focused, increasing efficiency.
+  \item
+    \textbf{Researched numerical tools} used to develop intuition for project.
+  \item
+    \textbf{Developed theoretical solution} by writing a visualization program in python. This visualization allowed solutions to be guessed just by looking at a chart.
+\end{itemize}}
 \cventry{2015--2017}{Summer Researcher}{Nasser Moazzen-Ahmadi}{Calgary}{University of Calgary}{\textbf{Study of infrared (IR) rovibrational spectroscopy of molecular clusters.}\\%
 Molecular clusters were formed in vacuum with a supersonic slit-jet. Clusters were probed with a continuous wave laser (QCL and OPO) scanned at high resolution to obtain rotational spectra.\\
-Primary responsibilities were system maintenance, automation, data calibration, and ordering parts.
-\begin{itemize}%
-\item PHAS symposium poster presentation 2017
-\item Publication of "Three new infrared bands of the He-OCS complex" 2017
-\item Undergraduate research night poster presentation 2016
-\item Quantum Alberta Workshop poster presentation 2016
-\item Safety inspection 2016
-\end{itemize}}
+\begin{itemize}
+  \item
+    \textbf{Automated} parts of the data calibration process, leading to nearly a doubling of the speed for calibration.
+  \item
+    \textbf{Improved} the software design of the LabVIEW program to be more encapsulated and extensible for future development.
+  \item
+    \textbf{Communicated} with the scientific community in several poster presentations (PHAS Symposim 2017, Undergraduate Research Night 2016, Quantum Alberta Workshop 2016) and one publication ( Three new infrared bands of the He-OCS complex, 2017)
+  \item
+    \textbf{Conducted annual safety inspection} to evaluate the state of the lab, leading to several corrections of errors in previous reports.
+\end{itemize}
+}
 
-\section{Other Projects}
-\cvitem{Machine learning}{Machine learning with neural nets has been a hobby of mine for some time now. I am working on passion project where a user-defined AI is used to supervise a neural net to to train a prior which is refined with Deep-Q learning.}
 
 
-\subsection{Skills}
-\cvitem{Soft skills}{Experimental design, record-keeping, scientific communication}
-\cvitem{Lab skills}{Pressurized gas, high vacuum, low vacuum, lasers, optics, cryogenics, Automation, Electronics, spectroscopy, gas chromatography (GC), mass spectrometry (MS), GCMS, nuclear magnetic resonance (NMR)}
-\cvitem{Programming}{In order of familiarity: Python (Scipy, Numpy, Pytorch), LabVIEW, Fortran 77 and 90, Matlab, SQL, shell and batch scripts, makefile}
-\cvitem{Other computer}{Machine learning, Git, network setup and maintenance, vitual machines (VMware, VirtualBox)}
-\cvitem{Word Processing}{Proficient with LaTeX as well as WYSWIG editors such as MS Word}
-\cvitem{Spreadsheets}{Translatable experience with data analysis}
-\cvitem{OS}{Experience on Windows and Linux, as well as Mac OS.}
+\section{Personal Projects}
+\cventry{2018}{Improving Existing AI with Neural Nets}{}{}{}{ I am working on passion project where a black-box AI is used to train a neural net. The neural net is then trained with deep Q reinforcement learning to surpass the performance of the original AI.}
+\cventry{2018}{Analysis of Harm Reduction Data}{}{}{}{EcstasyData.org is an independent laboratory pill testing program run by Erowid Center with support from Isomer Design and Dancesafe. I am working with Erowid Center to help analyze and interpret their data.}
+
+
+\section{Skill Summary}
+\subsection{Soft Skills}
+\cvitem{Creativity}{Original thinking was paramount in developing a visualizer in my thesis and the apparatus for bitumen irradiation, as well as finding opportunities for automation in my summer research position.}
+\cvitem{Communication}{Ability to share scientific ideas in accessibly through presentations. This skill was essential in my success in all of my previous positions.}
+\cvitem{Organization}{Juggling multi-faceted problems while keeping detailed records and staying goal oriented the whole time is my normal state of operation. This is best exemplified in my research assistant position where I was the primary organizer of the project.}
+\subsection{Hard Skills}
+\cvitem{Lab skills}{automation, pressurized gas, vacuum, lasers, optics, cryogenics, electronics, spectroscopy, gas chromatography (GC), mass spectrometry (MS), GCMS, nuclear magnetic resonance (NMR)}
+\cvitem{Programming}{In order of familiarity: Python (Scipy, Numpy, Pytorch), LabVIEW, Git, Fortran 77 and 90, Matlab, SQL, shell and batch scripts, makefile}
+\cvitem{Other}{LaTeX, MS Word, Windows, Linux, Android, Mac OS.}
 
 %\section{Awards and Scholarships}
 %\cvitem{NSERC Undergraduate Student Research Award}{2016}
